@@ -249,7 +249,7 @@ body {
   border-radius: 50%;
   background-size: cover;
   background-position: center;
-  background-repeat: none;
+  background-repeat: no-repeat;
 }
 
 .timeline li .timeline-panel {
@@ -364,6 +364,34 @@ footer li {
   margin: 0.5rem;
 }
 
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* Media Query */
 /* Extra large */
 @media (max-width: 1200px) {
@@ -435,8 +463,8 @@ footer li {
   }
 
   .timeline li .timeline-image {
-    width: 140px;
-    height: 140px;
+    width: 132px;
+    height: 132px;
   }
 
   .sticky-top {
